@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>给图片添加四个边角</title>
+    <style type="text/css">
+        div {
+            position: relative;
+            left: 50px;
+            top: 50px;
+            margin: 10px;
+            width: 500px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+
+        span {
+            position: absolute;
+            padding: 5px;
+            border-style: solid;
+            border-color: #000;
+        }
+
+        .row1 {
+            border-width: 5px 0 0 5px;
+            top: -14px;
+            left: -14px;
+        }
+
+        .row2 {
+            border-width: 5px 5px 0 0;
+            top: -14px;
+            right: -14px;
+        }
+
+        .col1 {
+            border-width: 0 0 5px 5px;
+            bottom: -14px;
+            left: -14px;
+        }
+
+        .col2 {
+            border-width: 0 5px 5px 0;
+            bottom: -14px;
+            right: -14px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <span class="row row1"></span>
+    <span class="row row2"></span>
+    <span class="col col1"></span>
+    <span class="col col2"></span>
+</div>
+</body>
+</html>
