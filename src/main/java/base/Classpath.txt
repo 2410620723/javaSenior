@@ -1,0 +1,1 @@
+classpath 针对的是class文件，它可以找到classpath目录下的所有class文件。针对的是运行而不是编译。
