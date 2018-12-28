@@ -1,0 +1,25 @@
+google使用的开源的工具类
+这个工具类满足了上面所说的所有的要求。
+
+同时对于图片的处理还有了别的方法，如旋转，裁切，加水印等等。
+
+在github上面的地址是：https://github.com/coobird/thumbnailator
+
+maven的地址
+
+<dependency>
+   <groupId>net.coobird</groupId>
+   <artifactId>thumbnailator</artifactId>
+   <version>0.4.8</version>
+</dependency>
+使用起来特别的简单：一行代码就搞定了
+Thumbnails.of("原图文件的路径")
+        .scale(1f)
+        .outputQuality(0.5f)
+        .toFile("压缩后文件的路径");
+
+其中的scale是可以指定图片的大小，值在0到1之间，1f就是原图大小，0.5就是原图的一半大小，这里的大小是指图片的长宽。
+
+而outputQuality是图片的质量，值也是在0到1，越接近于1质量越好，越接近于0质量越差。
+
+对于压缩图片来说上面就已经足够了。
