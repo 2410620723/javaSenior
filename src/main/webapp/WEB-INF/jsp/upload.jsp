@@ -13,7 +13,7 @@
 <body>
 <div>
     <p>spring mvc multipartFile 组件方式上传图片</p>
-    <form method="post" action="/hello" enctype="multipart/form-data">
+    <form method="post" action="/uploadForThumbnail" enctype="multipart/form-data">
         <input type="file" name="file"><input type="submit">
     </form>
 </div>
